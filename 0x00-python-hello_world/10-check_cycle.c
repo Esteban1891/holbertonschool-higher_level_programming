@@ -7,8 +7,11 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *low = NULL, *run = NULL;
-	int = count;
-	low = run = list;
+	int = count = NULL;
+
+	low = list;
+	run = list;
+
 	while (low != NULL)
 	{
 		low = low->next;
