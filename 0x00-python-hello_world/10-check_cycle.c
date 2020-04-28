@@ -7,7 +7,7 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *low = NULL, *run = NULL;
-	int = count = 0;
+	int count = 0;
 
 	low = list;
 	run = list;
