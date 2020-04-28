@@ -13,5 +13,5 @@ elif di == 0:
 else:
     val = "less than 6 and not 0"
 
-    print("Last digit of {:d} is {:d} and is {:s}".format(number, di, val))
+print("Last digit of {:d} is {:d} and is {:s}".format(number, di, val))
 
