@@ -6,17 +6,24 @@
  **/
 int check_cycle(listint_t *list)
 {
-	listint_t *low, *run;
-
+	listint_t *low = NULL, *run = NULL;
+	int = count;
 	low = run = list;
-	while (low != NULL && run != NULL && run->next != NULL)
+	while (low != NULL)
 	{
 		low = low->next;
-		run = run->next->next;
+		count++;
+
+		if (count == 3)
+		{
+			run = run->next;
+			count = 0;
+		}
 
 		if (low == run)
+		{
 			return (1);
+		}
 	}
-
 	return (0);
 }
