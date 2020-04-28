@@ -2,11 +2,11 @@
 import random
 number = random.randint(-10, 10)
 if number > 0:
-    msg = "is positive"
+    val = "is positive"
 elif number == 0:
-    msg = "is zero"
+    val = "is zero"
 else:
-    msg = "is negative"
+    val = "is negative"
 
 
-print("{:d} {:s}".format(number, msg))
+print("{:d} {:s}".format(number, val))
