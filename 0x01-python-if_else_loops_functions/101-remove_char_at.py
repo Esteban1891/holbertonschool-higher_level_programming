@@ -2,11 +2,11 @@
 
 
 def remove_char_at(str, n):
-    n = str
+    string = str
 
     if len(str) <= n or n < 0:
-        return n_str
+        return string
 
-    n = n[0: n:] + n[n + 1:]
+    string = string[0: n:] + string[n + 1:]
 
-    return n
+    return string
