@@ -1,15 +1,16 @@
+  
 #!/usr/bin/python3
 
 
 def fizzbuzz():
-    for num in range(1, 101):
-        if num % 3 == 0 and num % 5 == 0:
-            n = "FizzBuzz"
-        elif num % 3 == 0:
-            n = "Fizz"
-            elif num % 5 == 0:
-                n = "Buzz"
-            else:
-                n = num(str)
+    for n in range(1, 100 + 1):
+        if n % 3 == 0 and n % 5 == 0:
+            number = "FizzBuzz"
+        elif n % 3 == 0:
+            number = "Fizz"
+        elif n % 5 == 0:
+            number = "Buzz"
+        else:
+            number = str(n)
 
-                print("{:s}".format(n), end='')
+        print("{:d}".format(number), end=' ')
