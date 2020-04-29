@@ -4,4 +4,4 @@ for letter in range(97, 123):
         continue
 
 
-print("{}".format(letter), end='')
+print("{:c}".format(letter), end='')
