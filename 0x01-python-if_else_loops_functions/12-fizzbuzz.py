@@ -13,4 +13,4 @@ def fizzbuzz():
         else:
             number = str(n)
 
-        print("{:d}".format(number), end=' ')
+        print("{:s}".format(number), end=' ')
