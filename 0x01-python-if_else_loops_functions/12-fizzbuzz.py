@@ -9,5 +9,4 @@ def fizzbuzz():
                 n = "Buzz"
             else:
                 n = num(str)
-                print("{:d}".format(n), end='')
-
+                print("{:s}".format(n), end='')
