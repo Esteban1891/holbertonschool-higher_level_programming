@@ -4,3 +4,4 @@ for letter in range(97, 123):
         continue
 
 print("{:c}".format(letter), end='')
+
