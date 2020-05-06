@@ -5,5 +5,5 @@ def multiple_returns(sentence):
         First = None
     else:
         Length = len(setence)
-        First = setence[0]
-        return(Length, First)
+        First = setence[0
+    return(Length, First)
