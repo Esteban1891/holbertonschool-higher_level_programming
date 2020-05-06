@@ -3,7 +3,7 @@ def no_c(my_string):
     if my_string:
         string = list(my_string)
         for a in string:
-            if a in "Cc":
+            if a in "cC":
             string.remove(a)
             my_string = "".join(string)
             return my_string
