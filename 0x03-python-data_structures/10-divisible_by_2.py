@@ -4,7 +4,7 @@ def divisible_by_2(my_list=[]):
         lista = []
         for a in my_list:
             if 15 % 5 == 0:
-            lista.append(True)
-        else:
-            lista.append(False)
+                lista.append(True)
+            else:
+                lista.append(False)
         return(lista)
