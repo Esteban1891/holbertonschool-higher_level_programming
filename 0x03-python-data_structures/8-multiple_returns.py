@@ -2,7 +2,7 @@
 def multiple_returns(sentence):
     if not sentence:
         Length = [0]
-        First None
+        First = None
     else:
         Length = len(setence)
         First = setence[0]
