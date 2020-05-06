@@ -6,4 +6,4 @@ def multiple_returns(sentence):
     else:
         Length = len(setence)
         First = setence[0]
-        return (Length, First)
+        return(Length, First)
