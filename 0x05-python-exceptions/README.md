@@ -1,6 +1,8 @@
 <h1 class="gap">0x05. Python - Exceptions</h1>
 <p>&nbsp;</p>
-<p class="sm-gap"><span style="font-size: 1.5em;"><img src="https://i1.wp.com/tutorial.eyehunts.com/wp-content/uploads/2018/10/Python-try-except-Finally-Else-Print-Error-Examples-ne.png?fit=1308%2C834&amp;ssl=1" alt="" width="508" height="324" />Tasks</span></p>
+<p class="sm-gap"><span style="font-size: 1.5em;"><img src="https://i1.wp.com/tutorial.eyehunts.com/wp-content/uploads/2018/10/Python-try-except-Finally-Else-Print-Error-Examples-ne.png?fit=1308%2C834&amp;ssl=1" alt="" width="508" height="324" /></span></p>
+<p class="sm-gap"><span style="text-decoration: underline;"><em><span style="font-size: 1.5em;">Tasks</span></em></span></p>
+<p class="sm-gap">&nbsp;</p>
 <div data-role="task1154" data-position="1">
 <div id="task-1154" class=" clearfix gap">
 <h4 class="task">0. Safe list printing&nbsp;mandatory</h4>
