@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""This module contains a class that defines a square.
+In the Square class we initialize each object by the
+__init__ method with a private instance variable called
+__size that takes the size variable's value passed as
+argument. Also checks if the size arg has a valid value.
+"""
+
+
 class Square():
     """A square class."""
     def __init__(self, size=0, position=(0, 0)):
