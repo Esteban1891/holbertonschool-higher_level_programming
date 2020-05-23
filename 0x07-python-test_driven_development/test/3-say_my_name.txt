@@ -1,0 +1,28 @@
+The 'say_my_name' Module
+###########################################
+doctests for say_my_name
+###########################################
+using say_my_name
+
+import say_my_name from 3-say_my_name.py
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Expecting TypeError if first_name is not strings
+
+    >>> say_my_name(98, 'hi')
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+Expecting TypeError if last_name is not strings
+
+    >>> say_my_name('hmed',  84)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+Expecting right answer
+
+    >>> say_my_name('hmed', 'satour')
+    My name is hmed satour

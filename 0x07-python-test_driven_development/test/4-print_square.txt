@@ -1,0 +1,50 @@
+The 'print_square' Module
+###########################################
+doctests for print_square
+###########################################
+using print_square
+
+import print_square from 4-print_square.py
+
+    >>> print_square = __import__('4-print_square').print_square
+
+Expected TypeError if size is not an integer
+
+    >>> print_square('hi')
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Expected ValueError if size < 0
+
+    >>> print_square(-5)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+Expected TypeError if size is flaot and < 0
+
+    >>> print_square(-4.3)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Expected nothing
+
+    >>> print_square(0)
+    <BLANKLINE>
+
+Expected right answer
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Expected TypeError
+
+    >>> print_square(True)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer

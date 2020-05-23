@@ -1,0 +1,23 @@
+The 'add_integer' Module
+###########################################
+
+using add_integer
+
+import add_integer from 0-add_integer.py
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Expecting TypeError if a is not an integer/float
+
+    >>> add_integer('hi', 5)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Expecting TypeError if b is not an integer/float
+
+    >>> add_integer(4, 'hi')
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
