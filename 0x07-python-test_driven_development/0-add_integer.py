@@ -1,24 +1,19 @@
 #!/usr/bin/python3
-def add_integer(a, b=98):
-    """[summary]
+"""
+This is the "0-add_integer" module.
 
-    Arguments:
-        a {[int or float]} -- [first int to add]
+The 0-add_integer module supplies one function, add_integer(a, b).
+"""
 
-    Keyword Arguments:
-        b {int or float} -- [second int to add] (default: {98})
 
-    Raises:
-        TypeError: [if a is not int or flaot]
-        TypeError: [if b is not int or float]
-
-    Returns:
-        [int] -- [a + b]
-    """
-    if not isinstance(a, (int, float)):
-        raise TypeError('a must be an integer')
-        return
-    if not isinstance(b, (int, float)):
-        raise TypeError('b must be an integer')
-        return
-    return int(a) + int(b)
+def add_integer(a, b):
+    """Return the addition of two numbers."""
+    if type(a) is not int and type(a) is not float:
+        raise TypeError("a must be an integer")
+    if type(b) is not int and type(b) is not float:
+        raise TypeError("b must be an integer")
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+    return a + b
