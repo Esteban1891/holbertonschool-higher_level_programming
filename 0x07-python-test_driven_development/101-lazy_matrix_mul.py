@@ -5,9 +5,11 @@ import numpy as np
 
 def lazy_matrix_mul(m_a, m_b):
     """[lazy_matrix_mul using numpy]
+
     Arguments:
         m_a {[list of lists]} -- [matrice 1]
         m_b {[list of lists]} -- [matrice 2]
+
     Raises:
         TypeError: [if m_a not list]
         TypeError: [if m_b not list]
@@ -20,6 +22,7 @@ def lazy_matrix_mul(m_a, m_b):
         TypeError: [if rows of m_a are not with the same size]
         TypeError: [if rows of m_b are not with the same size]
         ValueError: [if m_a and m_b cant be multiplied]
+
     Returns:
         [type] -- [description]
     """

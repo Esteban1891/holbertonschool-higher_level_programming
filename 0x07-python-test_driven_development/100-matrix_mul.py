@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 def matrix_mul(m_a, m_b):
     """[matr_mul]
+
     Arguments:
         m_a {[m_a]} -- [first matrix]
         m_b {[m_b]} -- [second matrix]
+
     Raises:
         TypeError: [if m_a not list]
         TypeError: [if m_b not list]
@@ -16,6 +18,7 @@ def matrix_mul(m_a, m_b):
         TypeError: [if rows of m_a are not with the same size]
         TypeError: [if rows of m_b are not with the same size]
         ValueError: [if m_a and m_b cant be multiplied]
+
     Returns:
         [list of lists] -- [multiplication of m_a and m_b]
     """

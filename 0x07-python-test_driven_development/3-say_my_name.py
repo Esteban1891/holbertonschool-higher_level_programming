@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 def say_my_name(first_name, last_name=""):
     """[summary]
+
     Arguments:
         first_name {[str]} -- [first name]
+
     Keyword Arguments:
         last_name {str} -- [last name] (default: {""})
+
     Raises:
         TypeError: [if first name is not str]
         TypeError: [if last name is not str]

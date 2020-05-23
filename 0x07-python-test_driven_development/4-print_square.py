@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 def print_square(size):
     """[summary]
+
     Arguments:
         size {[int]} -- [size of square]
+
     Raises:
         TypeError: [if size is not int]
         ValueError: [if size <]

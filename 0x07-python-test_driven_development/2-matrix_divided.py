@@ -1,14 +1,18 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
     """add_integers
+
     Arguments:
         matrix {[list of int or float]} -- [the matrix to be divided]
+
     Keyword Arguments:
         div {int or float} -- [the number to divide by]
+
     Raises:
         TypeError: [if matrix not list or it's elements not int or float]
         TypeError: [if len of one of the items not equal to others]
         ZeroDivisionError: [if div == 0]
+
     Returns:
         [list] -- [division of list by div]
     """
