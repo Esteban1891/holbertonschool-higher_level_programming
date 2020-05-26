@@ -9,7 +9,7 @@
 <h2 class="gap">Tasks</h2>
 <div data-role="task1210" data-position="1">
 <div id="task-1210" class=" clearfix gap">
-<h4 class="task">0. Simple rectangle&nbsp;mandatorys</h4>
+<h4 class="task">0. Simple rectangle&nbsp;mandatory</h4>
 <p>Write an empty class&nbsp;<code>Rectangle</code>&nbsp;that defines a rectangle:</p>
 </div>
 </div>
