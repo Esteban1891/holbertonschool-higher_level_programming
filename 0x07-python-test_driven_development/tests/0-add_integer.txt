@@ -108,3 +108,15 @@ Checking more than 2 args:
          Traceback (most recent call last):
          ...
          TypeError: add_integer() takes 2 positional arguments but 3 were given
+
+Checking class:
+    >>> add_integer(Estebantupapi, 2)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'Estebantupapi' is not defined
+
+Checking dict:
+    >>> add_integer({'hola': 1}, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
