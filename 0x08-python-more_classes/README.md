@@ -15,7 +15,7 @@
 </div>
 <div data-role="task1211" data-position="2">
 <div id="task-1211" class=" clearfix gap">
-<h4 class="task">1. Real definition of a rectangle&nbsp;mandatory</h4>
+<h4 class="task">1. Real definition  of a rectangle&nbsp;mandatory</h4>
 <p>Write a class&nbsp;<code>Rectangle</code>&nbsp;that defines a rectangle by: (based on&nbsp;<code>0-rectangle.py</code>)</p>
 </div>
 </div>
