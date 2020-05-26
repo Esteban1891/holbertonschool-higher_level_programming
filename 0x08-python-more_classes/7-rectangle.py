@@ -72,9 +72,9 @@ class Rectangle:
             string = ""
             for a in range(self.__height):
                 if a == self.__height - 1:
-                    string += self.__width * self.print_symbol
+                    string += self.__width * str(self.print_symbol)
                 else:
-                    string += self.__width * self.print_symbol + '\n'
+                    string += self.__width * str(self.print_symbol) + '\n'
             return string
 
     def __repr__(self):
@@ -85,4 +85,3 @@ class Rectangle:
         """ Destructors are called when an object gets destroyed """
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
