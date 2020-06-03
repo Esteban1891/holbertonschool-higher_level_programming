@@ -3,9 +3,5 @@
 
 
 def is_same_class(obj, a_class):
-    """
-    :param obj:
-    :param a_class:
-    :return:
-    """
+    """instances"""
     return(type(obj) == a_class)
