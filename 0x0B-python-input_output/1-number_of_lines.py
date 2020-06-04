@@ -3,7 +3,7 @@
 
 
 def number_of_lines(filename=""):
-    """ count lines of file """
+    """function that returns the number of lines of a text file"""
 
     num = 0
     with open(filename, encoding="utf-8") as f:
