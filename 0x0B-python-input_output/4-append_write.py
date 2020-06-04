@@ -9,3 +9,4 @@ def append_write(filename="", text=""):
         f.write(text)
     f.close()
     return len(text)
+
