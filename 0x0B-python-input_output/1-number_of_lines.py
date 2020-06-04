@@ -9,4 +9,4 @@ def number_of_lines(filename=""):
         line = f.readline()
         n = len(line)
     f.close()
-    return(n)
+    return n
