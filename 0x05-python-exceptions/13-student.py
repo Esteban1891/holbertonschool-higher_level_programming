@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""initializate"""
+"""Student class
+Returns:
+    json -- dictionary representation of a Student instance
+"""
 
 
 class Student:
-    """create class student"""
+    """Class Student
+    """
 
     def __init__(self, first_name, last_name, age):
-        """initializate atrributes
-        :param first_name:
-        :param last_name:
-        :param age:
+        """initialize method
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -26,8 +27,7 @@ class Student:
                 dic[i] = getattr(self, i)
         return dic
 
-   def reload_from_json(self, json):
-        """ defines a student """
-        for key, value in json.items():
-            if hasattr(key, value):
-                setattr(key, value)
+    def reload_from_json(self, json):
+        for k, v in json.items():
+            if hasattr(self, k):
+                setattr(self, k, v)
