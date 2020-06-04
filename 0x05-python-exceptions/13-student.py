@@ -29,5 +29,5 @@ class Student:
    def reload_from_json(self, json):
         """ defines a student """
         for key, value in json.items():
-            self.__dict__[key] = value
-
+            if hasattr(key, value):
+                setattr(key, value)
