@@ -16,12 +16,12 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Public method that retrieves
-         a dictionary"""
+        """to_json
+        """
         dic = {}
         if attrs is None:
             return self.__dict__
-        for a in attrs:
-            if hasattr(self, a):
-                dic[a] = hasattr(self, a)
+        for i in attrs:
+            if hasattr(self, i):
+                dic[i] = getattr(self, i)
         return dic
