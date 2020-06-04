@@ -17,8 +17,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """Public method that retrieves
-         a dictionary representation
-          of a instance (same as ):"""
+         a dictionary"""
         dic = {}
         if attrs is None:
             return self.__dict__
