@@ -19,7 +19,7 @@ class Student:
         """Public method that retrieves
          a dictionary representation
           of a instance (same as ):"""
-        dic = dict()
+        dic = {}
         if attrs is None:
             return self.__dict__
         for a in attrs:
