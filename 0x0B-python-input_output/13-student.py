@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Student class
-Returns:
-    json -- dictionary representation of a Student instance
+"""initializate
 """
 
 
