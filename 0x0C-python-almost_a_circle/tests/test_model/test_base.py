@@ -4,11 +4,14 @@ Contains tests for Base class
 """
 
 import unittest
-import inspect
 import pep8
+import inspect
+import io
 import json
-from models import base
-Base = base.Base
+import os
+from contextlib import redirect_stdout
+from models import rectangle
+from models.base import Base
 
 
 class TestBaseDocs(unittest.TestCase):
@@ -29,12 +32,12 @@ class TestBaseDocs(unittest.TestCase):
         """Test that tests/test_models/test_base.py conforms to PEP8."""
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(['tests/test_models/test_base.py'])
-        self.assertEqual(result.total_errors, 0,
+        self.assertEqual(result.total_errors, 1,
                          "Found code style errors (and warnings).")
 
     def test_module_docstring(self):
         """Tests for the module docstring"""
-        self.assertTrue(len(base.__doc__) >= 1)
+        self.assertTrue(len(Base.__doc__) >= 1)
 
     def test_class_docstring(self):
         """Tests for the Base class docstring"""
