@@ -1,10 +1,10 @@
-# Higher-level programming
+# Higher-level programming :telescope:
 
-## Introduction
+## Introduction :space_invader:
 
 This repository contains all the work done for the higher-level programming track at Holberton School. It is written in Python, JavaScript, Bash, and other tools/languages.
 
-## Table of Contents
+## Table of Contents :clapper:
 
 * [About](#about)
 * [Requirements](#requirements)
@@ -69,6 +69,6 @@ git clone https://github.com/biehlerj/[Github project directory]
 1. [0x14-javascript-web_scraping](./0x14-javascript-web_scraping)
 
 
-## Author :octocat:
+## Author
 
 [Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
