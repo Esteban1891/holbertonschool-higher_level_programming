@@ -1,10 +1,11 @@
 # 0x06. Python - Classes and Objects :computer:
 ![img-import-&-modules](https://i.github-camo.com/fe211822532f7c89576111641e856d44f2baaa00/687474703a2f2f692e696d6775722e636f6d2f7455656475544b2e6769663f31)
-## Description 
+
+## Description :ant:
 
 Project aimed at Classes and Objects
 
-## Mandatory Tasks
+## Mandatory Tasks :fax:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
