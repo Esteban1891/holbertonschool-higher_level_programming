@@ -1,57 +1,30 @@
-<p><audio class="audio-for-speech" src="http://www.unit-conversion.info/texttools/text-to-html/"></audio></p>
-<div class="translate-tooltip-mtz hidden">
-<div class="header">
-<div class="header-controls">
-<h1 class="gap">0x06. Python - Classes and Objects</h1>
-<p>&nbsp;</p>
-<p class="sm-gap"><img src="https://www.bournetocode.com/projects/AQA_A_Theory/pages/img/oopBike.png" alt="" width="373" height="232" /></p>
-</div>
-<div class="translate-icons">
-<h2 class="gap">Tasks</h2>
-<div data-role="task1175" data-position="1">
-<div id="task-1175" class=" clearfix gap">
-<h4 class="task">0. My first square&nbsp;mandatory</h4>
-<p>Write an empty class&nbsp;<code>Square</code>&nbsp;that defines a square:</p>
-</div>
-</div>
-<div data-role="task1176" data-position="2">
-<div id="task-1176" class=" clearfix gap">
-<h4 class="task">1. Square with size&nbsp;mandatory</h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>0-square.py</code>)</p>
-</div>
-</div>
-<div data-role="task1180" data-position="3">
-<div id="task-1180" class=" clearfix gap">
-<h4 class="task">2. Size validation&nbsp;mandatory</h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>1-square.py</code>)</p>
-</div>
-</div>
-<div data-role="task1181" data-position="4">
-<div id="task-1181" class=" clearfix gap">
-<h4 class="task">3. Area of a square&nbsp;mandatory</h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>2-square.py</code>)</p>
-</div>
-</div>
-<div data-role="task1182" data-position="5">
-<div id="task-1182" class=" clearfix gap">
-<h4 class="task">4. Access and update private attribute&nbsp;mandatory</h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>3-square.py</code>)</p>
-</div>
-</div>
-<div data-role="task1207" data-position="6">
-<div id="task-1207" class=" clearfix gap">
-<h4 class="task">5. Printing a square&nbsp;mandatory</h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>4-square.py</code>)</p>
-</div>
-</div>
-<div data-role="task1208" data-position="7">
-<div id="task-1208" class=" clearfix gap">
-<h4 class="task">6. Coordinates of a square&nbsp;<span class="alert alert-warning mandatory-optional">mandatory</span></h4>
-<p>Write a class&nbsp;<code>Square</code>&nbsp;that defines a square by: (based on&nbsp;<code>5-square.py</code>)</p>
-</div>
-</div>
-&nbsp;<img class="to" src="http://www.unit-conversion.info/texttools/text-to-html/" alt="" /></div>
-</div>
-<div class="translated-text">&nbsp;</div>
-</div>
-<p>&nbsp;</p>
+# 0x06. Python - Classes and Objects :computer:
+![img-import-&-modules](https://i.github-camo.com/fe211822532f7c89576111641e856d44f2baaa00/687474703a2f2f692e696d6775722e636f6d2f7455656475544b2e6769663f31)
+## Description 
+
+Project aimed at Classes and Objects
+
+## Mandatory Tasks
+
+| Files/Folder | Description |
+| ------------ | ----------- |
+| My first square | Write an empty class Square that defines a square. |
+| Square with size | Write a class ```Square``` that defines a square by: ```(based on 0-square.py)``` |
+| Size validation  | Write a class ```Square``` that defines a square by: ```(based on 1-square.py```) |
+| Area of a square | Write a class ```Square``` that defines a square by: ```(based on 2-square.py)``` |
+| Access and update private attribute | Write a class ```Square``` that defines a square by: ```(based on 3-square.py)``` |
+|  Printing a square | Write a class ```Square``` that defines a square by: ```(based on 4-square.py)``` |
+| Coordinates of a square | Write a class ```Square``` that defines a square by: ```(based on 5-square.py)``` |
+
+## Advanced Tasks :light_rail:
+
+| Files | Description |
+| ----- | ----------- |
+| Singly linked list | Write a class ```Node``` that defines a node of a singly linked list by |
+|  Print Square instance  | Write a class ```Square``` that defines a square by: ```(based on 6-square.py)``` |
+| Compare 2 squares  | Write a class ```Square``` that defines a square by: ```(based on 4-square.py)``` |
+| ByteCode -> Python #5 | Write the Python class ```MagicClass``` that does exactly the same as the following Python bytecode: |
+
+## Author :octocat:
+
+[Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
