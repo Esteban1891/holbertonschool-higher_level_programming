@@ -2,7 +2,7 @@
 
 ## Introduction :guitar: 
 
-project aimed at if/else, loops, functions
+Project aimed at if/else, loops, functions
 
 ## Mandatory Tasks :mount_fuji:
 
