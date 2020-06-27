@@ -1,10 +1,10 @@
 # 0x02. Python - import & modules
 ![img-import-&-modules](https://camo.githubusercontent.com/23cc224d042194247ac6ad02feeb246b808fae72/68747470733a2f2f6c6f676f6469782e636f6d2f6c6f676f2f3732393237392e706e67)
-## Description
+## Description :ant:
 
 project aimed at import & modules
 
-## Mandatory Tasks
+## Mandatory Tasks :light_rail:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
