@@ -4,7 +4,7 @@
 
 ## Description :ant:
 
-project aimed at import & modules
+Project aimed at import & modules
 
 ## Mandatory Tasks :light_rail:
 
