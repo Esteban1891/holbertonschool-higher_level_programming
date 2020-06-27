@@ -3,7 +3,7 @@
 
 ## Description :fax:
 
-project aimed at  Data Structures: Lists, Tuples
+Project aimed at  Data Structures: Lists, Tuples
 
 ## Mandatory Tasks :pager:
 
