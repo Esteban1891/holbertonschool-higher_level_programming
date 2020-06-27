@@ -1,5 +1,7 @@
-# 0x02. Python - import & modules
+# 0x02. Python - import & modules :globe_with_meridians:
+
 ![img-import-&-modules](https://camo.githubusercontent.com/23cc224d042194247ac6ad02feeb246b808fae72/68747470733a2f2f6c6f676f6469782e636f6d2f6c6f676f2f3732393237392e706e67)
+
 ## Description :ant:
 
 project aimed at import & modules
@@ -22,7 +24,6 @@ project aimed at import & modules
 | Build my own calculator!  | Write a program that imports all functions from the file ```calculator_1.py``` and handles basic operations. |
 | Easy print | Write a program that prints ```#pythoniscool```, followed by a new line, in the standard output. |
 | ByteCode -> Python #3  | Write the Python function ```def magic_calculation(a, b):``` that does exactly the same as the following Python bytecode. |
-
 
 
 ## Author :octocat:
