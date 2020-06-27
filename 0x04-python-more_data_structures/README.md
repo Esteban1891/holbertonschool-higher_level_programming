@@ -2,7 +2,7 @@
 
 ## Description :moyai:
 
-project aimed at learning data structure and dictionaries
+Project aimed at learning data structure and dictionaries
 
 ## Mandatory Tasks :book:
 
