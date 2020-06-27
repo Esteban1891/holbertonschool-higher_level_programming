@@ -2,11 +2,11 @@
 
 ![img-import-&-modules](https://cdn-media-1.freecodecamp.org/images/1*FZGakHQbCUMAyDinf-KBiw.png)
 
-## Description 
+## Description :lock:
 
 Project aimed at Test-driven development
 
-## Mandatory Tasks
+## Mandatory Tasks :vhs:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
