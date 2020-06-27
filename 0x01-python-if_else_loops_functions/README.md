@@ -22,6 +22,16 @@ project aimed at if/else, loops, functions
 | Fizz Buzz | Write a function that prints the numbers from 1 to 100 separated by a space. |
 | Insert in sorted linked list | Write a function in C that inserts a number into a sorted singly linked list |
 
+## Advanced Tasks :light_rail:
+
+| Files | Description |
+| ----- | ----------- |
+| Smile in the mirror | Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line. |
+| Remove at position | Write a function that creates a copy of the string, removing the character at the position ```n``` (not the Python way, the “C array index”). |
+| ByteCode -> Python #2 |  Write the Python function def magic_calculation(a, b, c): that does exactly the same as the following Python bytecode. |
+
+
+
 
 
 ## Author :octocat:
