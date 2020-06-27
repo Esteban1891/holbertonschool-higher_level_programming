@@ -1,10 +1,10 @@
-# 0x00-python-hello_world
+# 0x00-python-hello_world :telescope:
 
-## Description
+## Description :headphones:
 
 First project on working with Python.
 
-## Mandatory Tasks
+## Mandatory Tasks :office:
 
 | Files | Description |
 | ----- | ----------- |
@@ -20,7 +20,7 @@ First project on working with Python.
 | 9-easter_egg.py | Prints "The Zen of Python" by Tim Peters followed by a new line |
 | 10-check_cycle.c | Checks if a singly linked list is a cycle |
 
-## Advanced Tasks
+## Advanced Tasks :light_rail:
 
 | Files | Description |
 | ----- | ----------- |
