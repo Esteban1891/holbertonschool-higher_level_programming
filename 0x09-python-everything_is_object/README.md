@@ -8,6 +8,7 @@
 Project aimed at Everything is object
 
 ---
+## Mandatory Tasks
 
 ### [0. Who am I?](./0-answer.txt)
 * What function would you use to print the type of an object?
@@ -106,6 +107,28 @@ Answer with Yes or No.
 
 ### [29. Python3: Mutable, Immutable... everything is object!](./106-line1.txt)
 * Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item):
+
+## Advanced Tasks :light_rail:
+
+### [30. #pythonic](./100-magic_string.py)
+* Write a function ```magic_string()``` that returns a string ```“Holberton”``` n times the number of the iteration (see code):
+
+### [31. Low memory cost](./101-locked_class.py)
+* Write a ```class LockedClass``` with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called ```first_name```.
+
+### [32. int 1/3](./103-line1.txt)
+* Assuming we are using a CPython implementation of Python3 with default options/configuration
+
+### [33. int 2/3](./104-line1.txt)
+* Assuming we are using a CPython implementation of Python3 with default options/configuration:
+* File: 104-line1.txt, 104-line2.txt, 104-line3.txt, 104-line4.txt, 104-line5.txt
+
+### [34. int 3/3](./105-line1.txt)
+* Assuming we are using a CPython implementation of Python3 with default options/configuration:
+
+### [35. Clear strings](./106-line1.txt)
+* Assuming we are using a CPython implementation of Python3 with default options/configuration (For answers with numbers use integers, don’t spell out the word)
+* File: 106-line1.txt, 106-line2.txt, 106-line3.txt, 106-line4.txt, 106-line5.txt
 
 ---
 
