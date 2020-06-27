@@ -8,7 +8,7 @@
 Project aimed at Everything is object
 
 ---
-## Mandatory Tasks
+## Mandatory Tasks :bookmark:
 
 ### [0. Who am I?](./0-answer.txt)
 * What function would you use to print the type of an object?
@@ -106,7 +106,9 @@ Answer with Yes or No.
 
 
 ### [29. Python3: Mutable, Immutable... everything is object!](./106-line1.txt)
-* Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item):
+* Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item)
+
+---
 
 ## Advanced Tasks :light_rail:
 
