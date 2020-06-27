@@ -1,10 +1,11 @@
 # 0x05. Python - Exceptions :computer:
 ![img-import-&-modules](https://o7planning.org/en/11421/cache/images/i/7601427.png)
-## Description 
+
+## Description :video_camera:
 
 project aimed at Exeptions
 
-## Mandatory Tasks
+## Mandatory Tasks :mag_right:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
