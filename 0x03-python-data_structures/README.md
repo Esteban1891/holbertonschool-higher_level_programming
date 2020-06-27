@@ -1,5 +1,5 @@
 # 0x03. Python - Data Structures: Lists, Tuples :computer:
-![img-import-&-modules](https://programar.best/wp-content/uploads/2019/10/6-curso-python-3-listas-tuplas-1024x576.jpg)
+![img-import-&-modules](https://cdn.educba.com/academy/wp-content/uploads/2019/06/Python-Tuple-vs-List.jpg)
 
 ## Description :fax:
 
