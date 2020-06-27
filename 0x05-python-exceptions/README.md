@@ -3,7 +3,7 @@
 
 ## Description :video_camera:
 
-project aimed at Exeptions
+Project aimed at Exeptions
 
 ## Mandatory Tasks :mag_right:
 
