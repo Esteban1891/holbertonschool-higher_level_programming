@@ -98,8 +98,11 @@ Answer with Yes or No.
 
 
 ### [27. Richard Sim's special #3](./27-answer.txt)
+* Will the last line of this script print ```139926795932424```? Answer with ```Yes``` or ```No```.
 
 ### [28. Richard Sim's special #4](./28-answer.txt)
+* Will the last line of this script print ```139926795932424```? Answer with ```Yes``` or ```No```.
+
 
 ### [29. Python3: Mutable, Immutable... everything is object!](./106-line1.txt)
 * Write a blog post about everything you just learned / this project is covering. Your blog post should be articulated this way (one paragraph per item):
