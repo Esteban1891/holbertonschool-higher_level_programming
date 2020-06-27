@@ -22,6 +22,16 @@ project aimed at learning data structure and dictionaries
 | Multiply by using map | Write a function that returns a list with all values multiplied by a number without using any loops. |
 | Roman to Integer | Create a function def roman_to_int (roman_string): ```that converts a Roman numeral to an integer```. |
 
+## Advanced Tasks :light_rail:
+
+| Files | Description |
+| ----- | ----------- |
+| Weighted average!  | Write a function that returns the weighted average of all integers tuple ```(<score>, <weight>)``` |
+| Squared by using map | Write a function that computes the square value of all integers of a matrix using ```map```. |
+| Delete by value | Write a function that deletes keys with a specific value in a dictionary. |
+| CPython #1: PyBytesObject | Create two C functions that print some basic info about Python lists and Python bytes objects. |
+
+
 ## Author :octocat:
 
 [Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
