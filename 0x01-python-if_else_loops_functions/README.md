@@ -1,10 +1,10 @@
 # 0x01-python-if_else_loops_functions :tram:
 
-## Description
+## Introduction :guitar: 
 
 project aimed at if/else, loops, functions
 
-## Mandatory Tasks
+## Mandatory Tasks :mount_fuji:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
@@ -29,9 +29,6 @@ project aimed at if/else, loops, functions
 | Smile in the mirror | Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line. |
 | Remove at position | Write a function that creates a copy of the string, removing the character at the position ```n``` (not the Python way, the “C array index”). |
 | ByteCode -> Python #2 |  Write the Python function def magic_calculation(a, b, c): that does exactly the same as the following Python bytecode. |
-
-
-
 
 
 ## Author :octocat:
