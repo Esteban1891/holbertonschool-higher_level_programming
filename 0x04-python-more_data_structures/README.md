@@ -1,10 +1,10 @@
-# 0x04. Python - More Data Structures: Set, Dictionary
+# 0x04. Python - More Data Structures: Set, Dictionary :bullettrain_side:
 
-## Description
+## Description :moyai:
 
 project aimed at learning data structure and dictionaries
 
-## Mandatory Tasks
+## Mandatory Tasks :book:
 
 | Files/Folder | Description |
 | ------------ | ----------- |
