@@ -1,2 +1,2 @@
--- displays average temperature by city ordered by temperature
-SELECT city, AVG(value) AS 'avg_temp' FROM temperatures GROUP BY city ORDER BY avg_temp DESC;
+-- scrpit that displays top 3 cities temp during july august
+SELECT city, AVG(value) AS avg_temp FROM temperatures WHERE month=7 OR month=8 GROUP BY city ORDER BY avg_temp DESC LIMIT 3
