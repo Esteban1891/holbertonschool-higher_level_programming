@@ -1,5 +1,7 @@
 # Higher-level programming :telescope:
 
+![error](https://cdn.goconqr.com/uploads/media/image/17902089/desktop_e66f7fc9-6c23-472f-a754-50001c15b1ad.png)
+
 ## Introduction :space_invader:
 
 A high-level language is a programming language designed to simplify computer programming. It is "high-level" since it is several steps removed from the actual code run on a computer's processor. High-level source code contains easy-to-read syntax that is later converted into a low-level language, which can be recognized and run by a specific CPU.
