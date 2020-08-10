@@ -6,7 +6,6 @@
 
 A high-level language is a programming language designed to simplify computer programming. It is "high-level" since it is several steps removed from the actual code run on a computer's processor. High-level source code contains easy-to-read syntax that is later converted into a low-level language, which can be recognized and run by a specific CPU.
 
-![introduction](https://camo.githubusercontent.com/b24c290610a5e71e561ff3dbacc9e2e55e5aab7c/68747470733a2f2f7777772e626f6f6b626972642e636f2e756b2f66696c65732f50616765496d616765732f466c6f774469616772616d322e706e67)
 
 ## Table of Contents :clapper:
 
