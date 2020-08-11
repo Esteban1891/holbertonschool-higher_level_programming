@@ -26,7 +26,7 @@ def filter__names():
     cur = db.cursor()
 
     # Executing db queries
-    cur.execute("SELECT * FROM states WHERE name='{:s}' ORDER BY id ASC".
+    cur.execute("SELECT * FROM states WHERE BINARY name='{:s}' ORDER BY id ASC".
                 format(name))
 
     # fetches all the rows of a query result
