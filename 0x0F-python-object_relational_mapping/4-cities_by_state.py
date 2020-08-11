@@ -25,8 +25,8 @@ def filter__list():
     cur = db.cursor()
 
     # Executing db queries
-    cur.execute("SELECT name.id, cities.id, states.id FROM states\
-                INNER JOIN cities ON cities.id = cities.states_id\
+    cur.execute("SELECT name.id, cities.id, states.id FROM cities\
+                INNER JOIN states ON cities.states_id = cities.id\
                 ORDER BY cities.id ASC")
 
     # fetches all the rows of a query result
