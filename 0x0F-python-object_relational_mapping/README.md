@@ -37,7 +37,7 @@ What you should learn from this project:
 
 
 ### [6. First state model](./model_state.py)
-* 
+* Write a python file that contains the class definition of a State and an instance Base = declarative_base()
 
 
 ### [7. All states via SQLAlchemy](./7-model_state_fetch_all.py)
