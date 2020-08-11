@@ -19,19 +19,22 @@ def filter__names():
                          charset="utf8",
                          )
 
+    # declaring arguments passed, with query.
+    name = argv[4]
+
     # Getting a cursor in MySQLdb python
     cur = db.cursor()
 
     # Executing db queries
-    cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'\
-                ORDER BY id ASC".format(argv[4]))
+    cursor.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",
+                   (name,))
 
     # fetches all the rows of a query result
     query_rows = cur.fetchall()
 
     # Printing the result one in one
     for row in query_rows:
-        if row[1] == argv[4]:
+        if row[1] == name:
             print(row)
 
     cur.close()
