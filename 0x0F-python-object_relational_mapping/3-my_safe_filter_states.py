@@ -1,40 +1,36 @@
 #!/usr/bin/python3
-"""Display name argument of states table"""
+'''
+This script select an state that matchs with a user input,
+but avoiding SQL injection.
+'''
+
+from sys import argv
 import MySQLdb
-import sys
 
+if __name__ == '__main__':
 
-def filter_names_safe():
-    """Takes arguments argv to list from database
-    Only lists with states that matches name argument
+    # declaring arguments passed, with query.
+    user = argv[1]
+    passwd = argv[2]
+    db = argv[3]
+    name = argv[4]
 
-    Arguments:
-        argv[1]: mysql username
-        argv[2]: mysql password
-        argv[3]: database name
-        argv[4]: state name
-    """
+    # creating connection to the database.
+    db_connection = MySQLdb.connect(host="localhost", port=3306, user=user,
+                                    passwd=passwd, db=db, charset="utf8")
 
-    # Build safety string for make query and avoid sql injection
-    if len(sys.argv) == 5:
-        db = MySQLdb.connect(host="localhost",
-                             port=3306,
-                             user=sys.argv[1],
-                             passwd=sys.argv[2],
-                             db=sys.argv[3])
+    # Making a cursor Object for query execution.
+    cursor = db_connection.cursor()
 
-        cur = db.cursor()
+    # Executing query.
+    cursor.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",
+                   (name,))
+    query_rows = cursor.fetchall()
 
-        cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'\
-                    ORDER BY id ASC".format(sys.argv[4]))
-        rows = cur.fetchall()
-        for i in rows:
-            print(i)
+    # Printing DATABASE
+    for row in query_rows:
+        if row[1] == name:
+            print(row)
 
-        cur.close()
-        db.close()
-    else:
-        return
-
-if __name__ == "__main__":
-    filter_names_safe()
+    cursor.close()
+    db_connection.close()
