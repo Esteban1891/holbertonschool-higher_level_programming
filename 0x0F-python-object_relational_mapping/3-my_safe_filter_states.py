@@ -1,44 +1,42 @@
 #!/usr/bin/python3
-'''
-This script select an state that matchs with a user input,
-but avoiding SQL injection.
-'''
-
-from sys import argv
+"""Display name argument of states table"""
 import MySQLdb
+from sys import argv
 
 
-def safe_filter():
-    """declaring arguments passed, with query"""
-    user = argv[1]
-    passwd = argv[2]
-    db = argv[3]
-    name = argv[4]
+def filter__names():
+    """Takes arguments argv to list from database
+    Only lists with states that start with  N
+        argv[1]: mysql username
+        argv[2]: mysql password
+        argv[3]: database name
+    """
+    db = MySQLdb.connect(host="localhost",
+                         port=3306,
+                         user=argv[1],
+                         passwd=argv[2],
+                         db=argv[3],
+                         charset="utf8",
+                         )
 
-    # creating connection to the database.
-    db_connection = MySQLdb.connect(host="localhost",
-                                    port=3306,
-                                    user=user,
-                                    passwd=passwd,
-                                    db=db,
-                                    charset="utf8")
+    # Getting a cursor in MySQLdb python
+    cur = db.cursor()
 
-    # Making a cursor Object for query execution.
-    cursor = db_connection.cursor()
+    # Executing db queries
+    cur.execute("SELECT * FROM states WHERE BINARY name='{:s}'\
+                ORDER BY id ASC".format(argv[4]))
 
-    # Executing query.
-    cursor.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",
-                   (name,))
-    query_rows = cursor.fetchall()
+    # fetches all the rows of a query result
+    query_rows = cur.fetchall()
 
-    # Printing DATABASE
+    # Printing the result one in one
     for row in query_rows:
-        if row[1] == name:
+        if row[1] == argv[4]:
             print(row)
 
-    cursor.close()
-    db_connection.close()
+    cur.close()
+    db.close()
 
 
 if __name__ == '__main__':
-    safe_filter()
+    filter__names()
