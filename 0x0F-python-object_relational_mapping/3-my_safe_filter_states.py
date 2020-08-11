@@ -27,7 +27,7 @@ def filter__names():
 
     # Executing db queries
     cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC",
-                (name))
+                (name,))
 
     # fetches all the rows of a query result
     query_rows = cur.fetchall()
