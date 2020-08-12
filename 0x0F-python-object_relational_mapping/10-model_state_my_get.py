@@ -16,7 +16,7 @@ def model_state_my_get():
         argv[3]),
         pool_pre_ping=True
     )
-    resource = ""
+    resource = None
     Base.metadata.create_all(engine)
 
     # associate it with our custom Session class
