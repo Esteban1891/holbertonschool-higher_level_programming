@@ -30,7 +30,7 @@ def list__cities():
     cur.execute("SELECT cities.name FROM cities\
                     JOIN states ON cities.state_id = states.id\
                     AND states.name = '{:s}'\
-                    ORDER BY cities.id ASC".format(sys.argv[4]))
+                    ORDER BY cities.id ASC".format(argv[4]))
 
     # fetches all the rows of a query result
     query_rows = cur.fetchall()
