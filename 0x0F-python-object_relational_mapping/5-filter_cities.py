@@ -40,7 +40,7 @@ def list__cities():
     for row in query_rows:
         res.append(row[0])
 
-    # Printing DATABASE
+    # Printing DATABASE of states name
     print(", ".join(res))
 
     cur.close()
