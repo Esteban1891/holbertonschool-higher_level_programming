@@ -28,7 +28,7 @@ def list__cities():
 
     # Executing db queries
     cur.execute("SELECT cities.name FROM cities\
-                    JOIN states ON cities.state_id = states.id\
+                    INNER JOIN states ON cities.state_id = states.id\
                     AND states.name = '{:s}'\
                     ORDER BY cities.id ASC".format(argv[4]))
 
