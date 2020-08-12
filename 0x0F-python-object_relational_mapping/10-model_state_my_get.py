@@ -31,10 +31,11 @@ def model_state_my_get():
     for state in rows:
         if state.name == argv[4]:
             print("{}".format(state.id))
-        elif resource is not None:
-            print(resource)
-        else:
-            print("Not found")
+
+    if resource is not None:
+        print(resource)
+    else:
+        print("Not found")
 
     session.close
 
