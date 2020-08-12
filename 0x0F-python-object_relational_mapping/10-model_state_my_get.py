@@ -16,6 +16,7 @@ def model_state_my_get():
         argv[3]),
         pool_pre_ping=True
     )
+    resource = ""
     Base.metadata.create_all(engine)
 
     # associate it with our custom Session class
@@ -30,7 +31,8 @@ def model_state_my_get():
     for state in rows:
         if state.name == argv[4]:
             print("{}".format(state.id))
-
+        elif resource is not None:
+            print(resource)
         else:
             print("Not found")
 
