@@ -32,6 +32,8 @@ def model_state_first():
     else:
         print("Nothing")
 
+    session.close()
+
 
 if __name__ == '__main__':
     model_state_first()
