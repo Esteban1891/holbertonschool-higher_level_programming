@@ -29,7 +29,7 @@ def list__cities():
     # Executing db queries
     cur.execute("SELECT cities.name FROM cities\
                     INNER JOIN states ON cities.state_id = states.id\
-                    AND states.name = '{:s}'\
+                    WHERE states.name = '{:s}'\
                     ORDER BY cities.id ASC".format(argv[4]))
 
     # fetches all the rows of a query result
