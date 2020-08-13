@@ -25,7 +25,7 @@ def model_state_my_get():
 
     session = Session()
 
-    rows = session.query(State).all()
+    rows = session.query(State)
 
     unknown = ""
 
