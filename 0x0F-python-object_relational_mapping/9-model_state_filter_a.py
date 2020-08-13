@@ -29,7 +29,7 @@ def model_state_filter_a():
         if 'a' in state.name:
             print("{}: {}".format(state.id, state.name))
 
-    session.close
+    session.close()
 
 
 if __name__ == '__main__':

@@ -29,7 +29,7 @@ def model_state():
     for state in rows:
         print("{}: {}".format(state.id, state.name))
 
-    session.close
+    session.close()
 
 
 if __name__ == '__main__':

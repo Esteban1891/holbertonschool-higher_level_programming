@@ -27,7 +27,7 @@ def model_state_insert():
     session.add(louisiana)
     session.commit()
     print(louisiana.id)
-    session.close
+    session.close()
 
 
 if __name__ == '__main__':

@@ -39,7 +39,7 @@ def model_state_my_get():
     if found is False:
             print("Not found")
 
-    session.close
+    session.close()
 
 
 if __name__ == '__main__':
