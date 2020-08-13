@@ -27,13 +27,13 @@ def model_state_my_get():
 
     rows = session.query(State)
 
-    unknown = ""
+    unk = ""
 
     for state in rows:
         if state.name == argv[4]:
-            unknown = state.id
-    if unknown is not "":
-        print(unknown)
+            unk = state.id
+    if unk is not "":
+        print(unk)
     else:
         print("Not Found")
 
