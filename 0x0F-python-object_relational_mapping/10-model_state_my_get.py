@@ -28,18 +28,14 @@ def model_state_my_get():
     rows = session.query(State).all()
 
     unknown = ""
-    found = True
 
     for state in rows:
         if state.name == argv[4]:
-            print("{}".format(state.id))
-            found = False
-            break
-
-    if unknown is not True:
+            unknown = state.id
+    if unknown is not "":
         print(unknown)
     else:
-        print("Not found")
+        print("Not Found")
 
     session.close
 
