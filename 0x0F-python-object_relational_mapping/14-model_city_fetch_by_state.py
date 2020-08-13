@@ -1,20 +1,17 @@
 #!/usr/bin/python3
-"""file similar to model_state.py named model_city.p
-    y that contains the class definition of a City
-"""
-from sys import argv
+"""Script that adds the State object Louisiana
+to the database 'hbtn_0e_6_usa"""
+
+import sys
 from model_state import Base, State
 from model_city import City
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmake
+from sqlalchemy.orm import sessionmaker
 
 
 def model_city_fetch_by_state():
-    """function file similar to
-    model_state.py named model_city.py
-    """
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
-        .argv[1], argv[2], argv[3]), pool_pre_ping=True)
+        sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
 
