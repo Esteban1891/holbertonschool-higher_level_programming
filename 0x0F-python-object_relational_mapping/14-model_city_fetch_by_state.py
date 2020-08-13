@@ -2,11 +2,11 @@
 """file similar to model_state.py named model_city.p
     y that contains the class definition of a City
 """
-from model_city import City
-from model_state import Base, State
-from sqlalchemy.orm import sessionmaker
 from sys import argv
+from model_state import Base, State
+from model_city import City
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmake
 
 
 def model_city_fetch_by_state():
