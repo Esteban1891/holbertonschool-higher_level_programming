@@ -21,15 +21,16 @@ def model_city_fetch_by_state():
     )
     Base.metadata.create_all(engine)
 
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker()
+    Session.configure(bind=engine)
 
     session = Session()
 
-    query = session.query(City, State) \
+    rows = session.query(City, State) \
                    .filter(City.state_id == State.id) \
                    .order_by(City.id)
 
-    for city, state in query:
+    for city, state in rows:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
 
     session.close()
