@@ -26,7 +26,7 @@ def model_city_fetch_by_state():
 
     rows = session.query(City, State)\
                   .filter(City.state_id == State.id)\
-                  .order_by(City.id)
+                  .order_by(City.id).all()
 
     for state, city in rows:
         print('{}: ({}) {}'.format(state.name, city.id, city.name))
