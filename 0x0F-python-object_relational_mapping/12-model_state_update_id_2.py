@@ -19,6 +19,7 @@ def model_state_update():
     )
     Base.metadata.create_all(engine)
 
+    # configure Session class with desired options
     Session = sessionmaker()
 
     Session.configure(bind=engine)
