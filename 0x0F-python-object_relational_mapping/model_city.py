@@ -5,9 +5,15 @@ from sqlalchemy import Integer, Column, String, ForeignKey
 
 
 class City(Base):
-    """class city inherits Base"""
+    """
+    __tablename__ (str): --- table name of the class.
+    id (int): -------------- id of the class.
+    name (str): ------------ name of the class.
+    state_id (int): -------- identifier number.
+    """
     __tablename__ = 'cities'
 
     id = Column(Integer, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, nullable=False, foreign_keys('states.id'))
+    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+
