@@ -20,16 +20,17 @@ def model_city_fetch_by_state():
         pool_pre_ping=True
     )
     Base.metadata.create_all(engine)
-    Session = sessionmaker()
-    Session.configure(bind=engine)
+
+    Session = sessionmaker(bind=engine)
+
     session = Session()
 
-    rows = session.query(City, State)\
-                  .filter(City.state_id == State.id)\
-                  .order_by(City.id).all()
+    query = session.query(City, State) \
+                   .filter(City.state_id == State.id) \
+                   .order_by(City.id)
 
-    for state, city in rows:
-        print('{}: ({}) {}'.format(state.name, city.id, city.name))
+    for city, state in query:
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
 
     session.close()
 
