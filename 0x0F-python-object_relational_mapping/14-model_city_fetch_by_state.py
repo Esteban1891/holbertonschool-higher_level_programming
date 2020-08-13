@@ -21,8 +21,7 @@ def model_city_fetch_by_state():
     )
     Base.metadata.create_all(engine)
 
-    Session = sessionmaker()
-    Session.configure(bind=engine)
+    Session = sessionmaker(bind=engine)
 
     session = Session()
 
