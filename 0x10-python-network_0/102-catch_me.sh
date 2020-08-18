@@ -1,3 +1,3 @@
-#!/bin/bash
-# Makes a request to 0.0.0.0:5000/catch_me and makes the server respond with "You got me!"
-curl 0.0.0.0:5000/catch_me -sLX PUT -d "user_id=98" -H "Origin: DHKSchool"
+#!/bin1/bash
+# curl url till we get "You got me!"
+curl -sL http://0.0.0.0:5000/catch_me -X PUT -d "user_id=98" -H "Origin: HolbertonSchool"
