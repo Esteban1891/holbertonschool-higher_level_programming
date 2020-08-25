@@ -5,7 +5,7 @@ import requests
 
 
 def error_code():
-    """"""Script that fetches to url and get X-Request-Id."""
+    """Script that fetches to url and get X-Request-Id."""
     res = requests.get(argv[1])
     if res.status_code >= 400:
         print("Error code: {}".format(res.status_code))
