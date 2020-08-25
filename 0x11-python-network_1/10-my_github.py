@@ -4,7 +4,6 @@ import requests
 import sys
 
 
-
 def main():
     username = sys.argv[1]
     password = sys.argv[2]
