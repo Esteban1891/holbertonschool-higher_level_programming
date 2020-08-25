@@ -7,15 +7,13 @@ from sys import argv
 
 
 def my_github():
-    """api"""
-    username = argv[1]
-    password = argv[2]
-    url = 'https://api.github.com/user'
-    r = requests.get(url, auth=(username, password))
-    try:
-        print(r.json()['id'])
-    except KeyError:
-        print('None')
+
+    username = sys.argv[1]
+    password = sys.argv[2]
+    response = requests.get(
+        'https://api.github.com/user', auth=(username, password))
+    data = response.json()
+    print(data.get('id'))
 
 
 if __name__ == "__main__":
