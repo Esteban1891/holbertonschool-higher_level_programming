@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Takes in three strings and sends a Tweet search to the Twitter API"""
+import requests
+import sys
+import base64
 
-if __name__ == "__main__":
-    import requests
-    import sys
-    import base64
+
+def twitter():
 
     key_secret = '{}:{}'.format(sys.argv[1], sys.argv[2]).encode('ascii')
     b64_encoded_key = base64.b64encode(key_secret)
@@ -44,3 +45,7 @@ if __name__ == "__main__":
         print("[{}] {} by {}".format(x.get('id_str'),
                                      x.get('text'),
                                      x.get('user').get('name')))
+
+
+if __name__ == "__main__":
+    twitter()
