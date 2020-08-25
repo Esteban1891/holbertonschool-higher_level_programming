@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-
+"""
+list 10 commits (from the most recent to oldest) of the repository and user
+sent in as arguments
+"""
 if __name__ == '__main__':
-    from sys import argv
     import requests
-    url = 'https://api.github.com/repos/{}/{}/commits'\
-        .format(argv[1], argv[2])
-    r = requests.get(url)
-    results = ''
-    count = 0
-    for commit in r.json():
-        count += 1
-        if count > 10:
-            break
-        if isinstance(commit, dict):
-            print('{}: {}'.format(commit.get('sha'),
-                                  commit.get('commit').
-                                  get('author').get('name')))
+    from sys import argv
+    r = requests.get('https://api.github.com/repos/{}/{}/commits'
+                     .format(argv[2], argv[1]))
+    commits = r.json()
+    for commit in commits[:10]:
+        print(commit.get('sha'), end=': ')
+        print(commit.get('commit').get('author').get('name'))
