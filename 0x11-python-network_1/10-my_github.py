@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-"""
-Making a request to the GitHub API to display a users id
-"""
+"""Login my github acount and authentique for get data."""
 import requests
-from sys import argv
+import sys
 
 
-def my_github():
 
+def main():
     username = sys.argv[1]
     password = sys.argv[2]
     response = requests.get(
@@ -17,4 +15,4 @@ def my_github():
 
 
 if __name__ == "__main__":
-    my_github()
+    main()
