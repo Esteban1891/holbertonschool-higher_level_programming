@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """initializate"""
 from sys import argv
-from urllib import requests
+import requests
 
 
 def post_email():
