@@ -12,9 +12,9 @@ def json_api():
             q = argv[1]
         except:
             q = ''
-            url = 'http://0.0.0.0:5000/search_user'
-            payload = {'q': q}
-            r = requests.post(url, payload)
+        url = 'http://0.0.0.0:5000/search_user'
+        payload = {'q': q}
+        r = requests.post(url, payload)
         try:
             json = r.json()
             if len(json) == 0:
