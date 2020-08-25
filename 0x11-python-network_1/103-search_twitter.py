@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Sends a search request to the Twitter API.
+
 Display format: [<Tweet ID>] <Tweet text> by <Tweet owner name>
+
 Usage: ./103-search_twitter.py <consumer key> <consumer secret> <search string>
   - Uses the application-only authenitcation flow.
 """
