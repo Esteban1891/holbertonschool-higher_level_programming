@@ -1,45 +1,46 @@
 #!/usr/bin/python3
-"""Sends a search request to the Twitter API.
-
-Display format: [<Tweet ID>] <Tweet text> by <Tweet owner name>
-
-Usage: ./103-search_twitter.py <consumer key> <consumer secret> <search string>
-  - Uses the application-only authenitcation flow.
-"""
-import sys
-import base64
-import requests
-
+"""Takes in three strings and sends a Tweet search to the Twitter API"""
 
 if __name__ == "__main__":
-    # Get bearer token
-    url = "https://api.twitter.com/oauth2/token"
-    token = "{}:{}".format(sys.argv[1], sys.argv[2]).encode("ascii")
-    token = base64.b64encode(token).decode("utf-8")
-    headers = {
-        "Authorization": "Basic {}".format(token),
-        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    }
-    payload = {"grant_type": "client_credentials"}
-    r = requests.post(url, headers=headers, data=payload)
-    bearer = r.json().get("access_token")
+    import requests
+    import sys
+    import base64
 
-    # Make search request
-    url = "https://api.twitter.com/1.1/search/tweets.json"
-    headers = {
-        "Authorization": "Bearer {}".format(bearer)
-    }
-    params = {
-        "q": sys.argv[3],
-        "count": "5"
-    }
-    url = "https://api.twitter.com/1.1/search/tweets.json"
-    tweets = requests.get(url, headers=headers, params=params)
+    key_secret = '{}:{}'.format(sys.argv[1], sys.argv[2]).encode('ascii')
+    b64_encoded_key = base64.b64encode(key_secret)
+    b64_encoded_key = b64_encoded_key.decode('ascii')
 
-    # Print matched tweets
-    tweets = tweets.json().get("statuses")
-    for t in tweets:
-        tweet_id = t.get("id")
-        tweet_text = t.get("text")
-        tweet_author = t.get("user").get("name")
-        print("[{}] {} by {}".format(tweet_id, tweet_text, tweet_author))
+    base_url = 'https://api.twitter.com/'
+    auth_url = '{}oauth2/token'.format(base_url)
+
+    auth_headers = {
+        'Authorization': 'Basic {}'.format(b64_encoded_key),
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    }
+
+    auth_data = {
+        'grant_type': 'client_credentials'
+    }
+
+    auth_resp = requests.post(auth_url, headers=auth_headers, data=auth_data)
+    access_token = auth_resp.json()['access_token']
+
+    search_headers = {
+        'Authorization': 'Bearer {}'.format(access_token)
+    }
+
+    search_params = {
+        'q': sys.argv[3],
+        'result_type': 'recent',
+        'count': 5
+    }
+
+    search_url = '{}1.1/search/tweets.json'.format(base_url)
+    search_resp = requests.get(search_url, headers=search_headers,
+                               params=search_params)
+    tweet_data = search_resp.json()
+
+    for x in tweet_data['statuses']:
+        print("[{}] {} by {}".format(x.get('id_str'),
+                                     x.get('text'),
+                                     x.get('user').get('name')))
