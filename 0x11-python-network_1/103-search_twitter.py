@@ -2,12 +2,12 @@
 """
 takes in 3 strings and sends a search request to the Twitter API
 """
-import requests
-from base64 import b64encode
-from sys import argv
 
 
-def searh_twitter():
+if __name__ == '__main__':
+    import requests
+    from base64 import b64encode
+    from sys import argv
     key_secret = argv[1] + ':' + argv[2]
     base64_encode = b64encode(key_secret.encode()).decode('utf-8')
     payload = {'grant_type': 'client_credentials'}
@@ -27,7 +27,3 @@ def searh_twitter():
     for tweet in tweets:
         print('[{}] {} by {}'.format(tweet.get('id'), tweet.get('text'),
                                      tweet.get('user').get('name')))
-
-
-if __name__ == '__main__':
-    searh_twitter()
