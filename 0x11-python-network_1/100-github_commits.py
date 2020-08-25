@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-# Getting trolly.
-import requests
-import sys
-import subprocess
 
 if __name__ == '__main__':
-    project = "/tmp/correction/holberton_corrections/corrections/300/1716/"
-    for output in subprocess.getoutput("ls {}".format(project)).split('\n'):
-        subprocess.getoutput("echo hello > {}{}".format(project, output))
-    print("hello")
+    from sys import argv
+    import requests
+    url = 'https://api.github.com/repos/{}/{}/commits'\
+        .format(argv[1], argv[2])
+    r = requests.get(url)
+    results = ''
+    count = 0
+    for commit in r.json():
+        count += 1
+        if count > 10:
+            break
+        if isinstance(commit, dict):
+            print('{}: {}'.format(commit.get('sha'),
+                                  commit.get('commit').
+                                  get('author').get('name')))
