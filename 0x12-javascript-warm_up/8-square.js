@@ -1,5 +1,5 @@
 #!/usr/bin/node
-let squarePrinter = 'X';
+const squarePrinter = 'X';
 let size = process.argv[2];
 size = parseInt(size);
 if (isNaN(size)) {
