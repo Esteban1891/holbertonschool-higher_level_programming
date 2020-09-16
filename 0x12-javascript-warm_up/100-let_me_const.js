@@ -1,2 +1,4 @@
 #!/usr/bin/node
-const myVar = 333;
+// JS Script
+
+myVar = 333;
