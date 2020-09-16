@@ -8,4 +8,3 @@ if (isNaN(x)) {
     console.log('C is fun');
   }
 }
-
