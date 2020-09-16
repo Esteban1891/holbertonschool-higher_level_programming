@@ -1,6 +1,8 @@
 #!/usr/bin/node
-if (3 <= process.argv.length) {
-    console.log(process.argv[2]);
-} else {
+let argsLen = 0;
+process.argv.forEach((element) => { argsLen++; });
+if (argsLen === 2) {
   console.log('No argument');
+} else {
+  console.log(process.argv[2]);
 }
