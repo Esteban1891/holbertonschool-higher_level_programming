@@ -8,7 +8,7 @@ request.get(apiUrl, (error, response, body) => {
   } else {
     const tasks = JSON.parse(body);
     for (let i = 0; i < tasks.length; i++) {
-      let key = tasks[i].userId;
+      const key = tasks[i].userId;
       if (tasks[i].completed) {
         if (!(key in tasksDict)) {
           tasksDict[key] = 1;

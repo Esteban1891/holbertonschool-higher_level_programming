@@ -6,7 +6,7 @@ request.get(apiUrl, (error, response, body) => {
   if (error) {
     console.log(error);
   } else {
-    let charList = JSON.parse(body).characters;
+    const charList = JSON.parse(body).characters;
     for (let i = 0; i < charList.length; i++) {
       request.get(charList[i], (err, res, body) => {
         if (err) {
