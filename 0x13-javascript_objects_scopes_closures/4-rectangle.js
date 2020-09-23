@@ -10,17 +10,20 @@ const Rectangle = class {
       this.height = h;
     }
   }
+
   print () {
-    let printer = 'X'.repeat(this.width);
+    const printer = 'X'.repeat(this.width);
     for (let i = 0; i < this.height; i++) {
       console.log(printer);
     }
   }
+
   rotate () {
-    let tmp = this.width;
+    const tmp = this.width;
     this.width = this.height;
     this.height = tmp;
   }
+
   double () {
     this.width *= 2;
     this.height *= 2;
